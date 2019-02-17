@@ -30,19 +30,6 @@ float media_geometrica(float datos[], int n) {
     return exp(media_aritmetica(datos_log, n));
 }
 
-int ok(int argc, char *argv[]) {
-    printf("%i\n", argc);
-    if(argc < 3) printf("no hay suficientes argumentos");
-
-    float datos[argc - 2]; 
-    int i;
-    for(i = 2; i < argc; i++) {
-        datos[i-2] = atof(argv[i]);
-        printf("%s %f \n", argv[i], datos[i-2]);
-    }
-    return 0;
-}
-
 int main(int argc, char *argv[]) {
 
     if(argc < 3) printf("no hay suficientes argumentos\n");
