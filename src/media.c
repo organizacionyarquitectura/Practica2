@@ -39,8 +39,8 @@ int main(int argc, char *argv[]) {
     for(i = 2; i < argc; i++) 
         datos[i-2] = atof(argv[i]);
         
-    char option = (strlen(argv[1]) == 1) ? argv[1][0] : 0;
-    switch (option) {
+    char opcion = (strlen(argv[1]) == 1) ? argv[1][0] : 0;
+    switch (opcion) {
         case 'A':
             printf("%.5f\n", media_aritmetica(datos, argc - 2)); 
             break;
